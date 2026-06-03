@@ -1,0 +1,443 @@
+/* ==========================================================================
+   1. GLOBAL STYLES (Poori website ke aam badlav)
+   ========================================================================== */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #fcfbfc; /* Change background color here */
+  color: #2c2c2c;            /* Change main text color here */
+}
+
+.page-container {
+  max-width: 1200px;         /* Website ki width limit */
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+
+/*
+   2. HOME PAGE - HERO BANNER
+*/
+.hero-banner {
+  /* Change the background image URL*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+  url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  height: 400px;             /* Height of the top banner */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-content {
+  max-width: 650px;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  color: #ffffff !important;
+  font-size: 3rem !important; /* Heading text size inside banner */
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+  color: #f5f5f5;
+}
+
+/* Home Page Button Styles */
+.hero-explore-btn {
+  display: inline-block;
+  background-color: #ffffff; /* Button color */
+  color: #800020;            /*  text color */
+  text-decoration: none;
+  padding: 12px 32px;
+  border-radius: 30px;       /* button round */
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.hero-explore-btn:hover {
+  transform: translateY(-2px); /* Moves button up slightly on hover */
+  background-color: #f9f9f9;
+}
+
+
+/*
+   3. HOME PAGE - FEATURES GRID (Teen niche wale feature cards)
+ */
+.features-title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 35px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+
+/*
+   4. PRODUCTS MATRIX GRID & CARDS (Products catalog screen)
+*/
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* How many cards per row */
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px); /* Card lifts up when hovered */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.product-image-wrapper {
+  width: 100%;
+  height: 250px;
+  padding: 15px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-info {
+  padding: 20px;
+  border-top: 1px solid #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Puts '...' if title is too long */
+  margin: 0;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #800020;          /* Brand color for price text */
+  margin: 0;
+}
+
+/* View Details Button Styles */
+.view-details-btn {
+  display: block;
+  text-align: center;
+  background-color: #2c2c2c; /* Dark grey button */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.view-details-btn:hover {
+  background-color: #800020;  /* Turns maroon on hover */
+}
+
+
+/* ==========================================================================
+   5. LUXURY VAULT LAYOUT (Favorites & Profile User Dashboard)
+   ========================================================================== */
+.vault-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.vault-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.vault-badge {
+  background: #fff1f3;
+  color: #800020;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border: 1px solid #ffd3db;
+}
+
+.vault-panel {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.panel-meta-text h3 { font-size: 1.25rem; margin: 0 0 4px 0; }
+.panel-meta-text p { font-size: 0.9rem; color: #777; margin: 0 0 25px 0; }
+
+.vault-inputs-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.vault-field {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vault-field label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* User Form Inputs */
+.vault-field input {
+  padding: 14px 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  background-color: #f8fafc;
+  color: #333;
+}
+
+.vault-field input:focus {
+  background-color: #ffffff;
+  border-color: #800020;    /* Focus border color */
+  outline: none;
+}
+
+.vault-action-btn {
+  background: #800020;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 0 30px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 48px;
+}
+
+.vault-user-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.user-avatar-glow {
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #800020, #b3193f);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 6px 20px rgba(128, 0, 32, 0.15);
+}
+
+.user-welcome-text { flex: 1; }
+.user-welcome-text h3 { margin: 0; font-size: 1.3rem; }
+
+.vault-edit-btn {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+}
+
+.wishlist-meta-header { margin-bottom: 30px; }
+.accent-line { width: 50px; height: 3px; background: #800020; border-radius: 2px; }
+
+/* Empty State Card View */
+.vault-empty-card {
+  text-align: center;
+  padding: 60px 30px;
+  background: #ffffff;
+  border: 1px dashed #d8dee4;
+  border-radius: 16px;
+}
+
+.vault-empty-icon { font-size: 3.5rem; margin-bottom: 15px; }
+
+.vault-discover-link {
+  display: inline-block;
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Remove From Vault Button */
+.vault-remove-btn {
+  margin-top: 10px;
+  background: #ffffff;
+  color: #999;
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.vault-remove-btn:hover {
+  background: #fff5f5;
+  border-color: #f5c6cb;
+  color: #c0392b;           /* Red color text on hover */
+}
+
+
+/*
+   6. PRODUCT DETAIL SCREEN (Single product expanded page)
+*/
+.detail-layout {
+  display: flex;
+  gap: 50px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.detail-image-box {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.detail-image-box img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.detail-info-box {
+  flex: 1.2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.back-link:hover { color: #800020; }
+.detail-category { text-transform: uppercase; font-size: 0.8rem; font-weight: 700; color: #999; margin-bottom: 5px; }
+.detail-title { font-size: 2rem; margin-bottom: 15px; }
+.detail-price { font-size: 1.8rem; font-weight: 700; color: #800020; margin-bottom: 20px; }
+.detail-description { font-size: 1rem; color: #555; margin-bottom: 25px; line-height: 1.7; }
+
+.rating-box {
+  font-size: 0.9rem;
+  color: #444;
+  background-color: #fcfbfc;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.add-cart-placeholder-btn {
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-cart-placeholder-btn:hover {
+  background-color: #800020;
+}
+
+.loading-spinner {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+}

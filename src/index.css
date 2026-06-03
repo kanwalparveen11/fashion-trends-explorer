@@ -1,0 +1,18 @@
+/* Modern, clean reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fcfbfc;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+/* Base layout padding */
+div {
+  transition: all 0.3s ease;
+}
