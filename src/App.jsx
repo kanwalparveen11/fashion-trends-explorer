@@ -1,10 +1,12 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AppProvider } from "./context/AppContext";
+import { AppProvider } from "./Context/AppContext";
 import Navbar from "./Components/navbar";
 import Home from "./Pages/Home";
 import Products from "./Pages/Products";
 import ProductDetails from "./Pages/ProductDetail";
 import Favourite from "./Pages/Favourite";
+import "./App.css";
 
 function App() {
     return (
